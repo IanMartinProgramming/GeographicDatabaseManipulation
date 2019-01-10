@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="A3MasterPage.master.cs" Inherits="A3IanMartin.A3MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 716px;
+        }
+        .auto-style7 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <section id="contentArea">
+                <table class="auto-style2" style="margin: auto;">
+                    <tr>
+                        <td>
+            <header><h1 style="text-align: center">Database Manipulation</h1></header>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+            <nav style="text-align: center">
+                <asp:LinkButton ID="homeLink" runat="server" PostBackUrl="~/Home.aspx" CausesValidation="False">Home</asp:LinkButton>
+&nbsp;|
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/AddContinent.aspx" CausesValidation="False">Add Continent</asp:LinkButton>
+&nbsp;|
+                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/AddCountry.aspx" CausesValidation="False">Add Country</asp:LinkButton>
+&nbsp;|
+                <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/AddTown.aspx" CausesValidation="False">Add Town</asp:LinkButton>
+            </nav>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+            <footer style="text-align: center">
+                Ian Martin<br />
+                416-836-4904<br />
+                ian.david.martin@gmail.com</footer>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </form>
+</body>
+</html>
